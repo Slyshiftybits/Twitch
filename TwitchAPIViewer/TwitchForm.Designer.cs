@@ -31,6 +31,7 @@
             this.lblViewers = new System.Windows.Forms.Label();
             this.lblFollowers = new System.Windows.Forms.Label();
             this.lblViews = new System.Windows.Forms.Label();
+            this.userName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblViewers
@@ -60,11 +61,21 @@
             this.lblViews.TabIndex = 2;
             this.lblViews.Text = "Views: 000";
             // 
+            // userName
+            // 
+            this.userName.AutoSize = true;
+            this.userName.Location = new System.Drawing.Point(108, 28);
+            this.userName.Name = "userName";
+            this.userName.Size = new System.Drawing.Size(64, 13);
+            this.userName.TabIndex = 3;
+            this.userName.Text = "Twitch User";
+            // 
             // TwitchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(274, 32);
+            this.ClientSize = new System.Drawing.Size(274, 50);
+            this.Controls.Add(this.userName);
             this.Controls.Add(this.lblViews);
             this.Controls.Add(this.lblFollowers);
             this.Controls.Add(this.lblViewers);
@@ -85,6 +96,7 @@
         private System.Windows.Forms.Label lblViewers;
         private System.Windows.Forms.Label lblFollowers;
         private System.Windows.Forms.Label lblViews;
+        private System.Windows.Forms.Label userName;
     }
 }
 

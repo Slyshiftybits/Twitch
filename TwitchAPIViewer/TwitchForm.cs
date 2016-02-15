@@ -37,6 +37,7 @@ namespace TwitchAPIViewer
             lblViewers.Text = string.Format("Viewers: {0:000}", twitchTV.stream.viewers);
             lblFollowers.Text = string.Format("Followers: {0:000}", twitchTV.stream.channel.followers);
             lblViews.Text = string.Format("Views: {0:000}", twitchTV.stream.channel.views);
+            userName.Text = string.Format("User: {0}", twitchTV.stream.channel.name);
         }
 
         private void LoadKraken()

@@ -14,6 +14,7 @@
             {
                 public int followers { get; set; }
                 public int views { get; set; }
+                public string name { get; set; }
             }
         }
     }
